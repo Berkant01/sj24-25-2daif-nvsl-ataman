@@ -1,3 +1,4 @@
 # sj24-25-2daif-nvsl-ataman
 
-4
+HÜ: ein (oder mehr) commits im eigenen Repository
+committen und pushen
