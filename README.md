@@ -4,7 +4,3 @@ committen und pushen
 
 git config --global user.name "Berkant Ataman"
 git config --global user.email "ata24098@spengergasse.at"
-
-
-
-Hausübung
