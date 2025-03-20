@@ -1,0 +1,82 @@
+# Übung Subnetting
+
+## Übung 1
+
+Bilde aus dem Netz 192.168.0.0 /24 4 Subnetze. Netze mit Mindestzahl an nutzbaren
+Host aber nicht darunter wählen:
+Netz a mit 20,
+Netz b mit 15,
+Netz c mit 30, und das
+Netz d mit den Rest Anteil der Netzwerkadressen.
+
+**Antwort**
+        a) 00-31   => 192.168.0.0   /27
+        b) 32-63   => 192.168.0.32  /27
+        c) 64-127  => 192.168.0.64  /26
+        d) 128-255 => 192.168.0.128 /25
+
+
+## Übung 2
+
+Teile das Netz 193.170.20.0 /24 in 8 gleich große Netze! Erstelle eine Tabelle mit folgenden Angaben:
+Netzwerkadresse,               nutzbare Hosts,                    Broadcastadresse,              Subnetzmaske.
+
+**Antwort**
+        Netzwerkadresse    Nutzbare Hosts   Broadcastadresse   Subnetzmaske
+        193.170.20.0/27    30               193.170.20.31     255.255.255.224
+        193.170.20.32/27   30               193.170.20.63     255.255.255.224
+        193.170.20.64/27   30               193.170.20.95     255.255.255.224
+        193.170.20.96/27   30               193.170.20.127    255.255.255.224
+        193.170.20.128/27  30               193.170.20.159    255.255.255.224
+        193.170.20.160/27  30               193.170.20.191    255.255.255.224
+        193.170.20.192/27  30               193.170.20.223    255.255.255.224
+        193.170.20.224/27  30               193.170.20.255    255.255.255.224
+
+
+
+## Übung 3
+
+172.28.40.0 /26 Teile wie folgt auf: 2 Netze!
+Erstelle eine Tabelle mit folgenden Angaben:
+Netzwerkadresse,               nutzbare Hosts,                    Broadcastadresse,              Subnetzmaske.
+
+**Antwort**
+        Netzwerkadresse    Nutzbare Hosts   Broadcastadresse   Subnetzmaske
+        172.28.40.0/27     30               172.28.40.31      255.255.255.224
+        172.28.40.32/27    30               172.28.40.63      255.255.255.224
+
+## Übung 4
+
+Wie lautet die Subnetzmaske bei der Netzadresse: 17.0.0.0 mit 10 verwendbaren Subnetzen, sowie mit mindestens 12 Hosts je Subnetz?
+Antwort in Sätzen, wie sie zu dieser Lösung kommen; und erstelle eine Tabelle:
+
+**Antwort**
+        Subnetzmaske: 255.240.0.0 (/12)
+
+## Übung 5
+
+Bestimmen Sie die Subnetmaske mit folgenden Angaben:
+
+Netzadresse: 210.52.190.0
+Subnetze: Anzahl 5
+Mindestanzahl von Hosts je Subnetz: 10
+
+**Antwort**
+        Subnetzmaske: 255.255.255.240 (/28)
+
+## Übung 6
+
+Teile  ein /30 Netz auf!    Wozu werden diese /30 Netze am häufigsten verwendet?
+Antwort:
+
+**Antwort**
+        /30-Netze bieten 2 nutzbare Hosts und werden hauptsächlich für Point-to-Point-Verbindungen genutzt.
+
+## Übung 7
+
+Nennen Sie den jeweiligen Netz- und Hostanteil der Klassen A, B und C
+
+**Antwort**
+        Klasse A: Netzanteil = 8 Bit, Hostanteil = 24 Bit.
+        Klasse B: Netzanteil = 16 Bit, Hostanteil = 16 Bit.
+        Klasse C: Netzanteil = 24 Bit, Hostanteil = 8 Bit.
