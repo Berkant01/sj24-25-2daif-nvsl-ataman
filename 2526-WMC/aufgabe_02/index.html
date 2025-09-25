@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Café Aroma</title>
+  <link id="theme-link" rel="stylesheet" href="theme-light.css">
+</head>
+<body>
+  <header>
+    <h1>Willkommen im Café Aroma</h1>
+    <nav>
+      <ul>
+        <li><a href="#speisekarte">Speisekarte</a></li>
+        <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>s
+    </nav>
+    <button onclick="wechselTheme()">Theme wechseln</button>
+  </header>
+
+  <main>
+    <section id="speisekarte">
+      <h2>Unsere Speisekarte</h2>
+      <img src="tassekaffe.jpg" alt="Tasse Kaffee">
+      <img src="kuchen.jpg" alt="Kuchenstück">
+      <table>
+        <caption>Getränke & Preise</caption>
+        <thead>
+          <tr>
+            <th>Getränk</th>
+            <th>Größe</th>
+            <th>Preis (€)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Kaffee</td><td>klein</td><td>2.20</td></tr>
+          <tr><td>Kaffee</td><td>groß</td><td>2.80</td></tr>
+          <tr><td>Espresso</td><td>einfach</td><td>1.90</td></tr>
+          <tr><td>Espresso</td><td>doppelt</td><td>2.50</td></tr>
+          <tr><td>Cappuccino</td><td>-</td><td>3.20</td></tr>
+          <tr><td>Latte Macchiato</td><td>-</td><td>3.40</td></tr>
+          <tr><td>Kakao</td><td>klein</td><td>2.50</td></tr>
+          <tr><td>Kakao</td><td>groß</td><td>3.00</td></tr>
+          <tr><td>Tee</td><td>verschiedene Sorten</td><td>2.20</td></tr>
+          <tr><td>Mineralwasser</td><td>0,5l</td><td>1.50</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="oeffnungszeiten">
+      <h2>Öffnungszeiten</h2>
+      <p>Mo–Fr: 8:00 – 20:00 Uhr</p>
+      <p>Sa–So: 9:00 – 22:00 Uhr</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="nachricht">Nachricht:</label><br>
+        <textarea id="nachricht" name="nachricht" rows="4"></textarea><br>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Special der Woche</h3>
+    <p>Frischer Apfelkuchen mit Vanillesauce – nur 4,50 €</p>
+  </aside>
+
+  <footer>
+    <p>Berkant Ataman</p>
+  </footer>
+
+  <script>
+    //KI
+    function wechselTheme() {
+      const link = document.getElementById("theme-link");
+      link.href = link.href.includes("light")
+        ? "theme-accent.css"
+        : "theme-light.css";
+    }
+  </script>
+</body>
+</html>
