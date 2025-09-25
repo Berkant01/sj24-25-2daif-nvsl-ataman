@@ -1,0 +1,15 @@
+Mit dem <datalist>-Element kann man Eingabefelder mit Vorschlägen versehen, ähnlich wie eine Dropdown-Liste. 
+Nutzer können entweder einen der Vorschläge auswählen oder einen eigenen Wert eingeben. Das macht Formulare 
+interaktiver und benutzerfreundlicher. 
+
+
+<label for="stadt">Lieblingsstadt:</label>
+<input list="staedte" id="stadt" name="stadt">
+
+<datalist id="staedte">
+  <option value="Wien">
+  <option value="Berlin">
+  <option value="Paris">
+  <option value="Rom">
+  <option value="London">
+</datalist>
