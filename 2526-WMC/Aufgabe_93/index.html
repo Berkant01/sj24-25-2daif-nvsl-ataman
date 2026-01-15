@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaWerk – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Menü umschalten">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Zur Startseite">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__text">NovaWerk</span>
+    </a>
+
+    <label class="burger" for="nav-toggle" aria-label="Menü öffnen/schließen">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Hauptmenü">
+      <a class="nav__link is-active" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Leistungen</a>
+      <a class="nav__link" href="kontakt.html">Kontakt</a>
+      <a class="nav__link nav__link--cta" href="#video">Video</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="hero card">
+      <div class="hero__content">
+        <h1>Responsive Website mit Grid & Flex</h1>
+        <p>
+          Beispielseite für die CSS-Aufgabe: klare Struktur, Artikel, Tabellen, Listen,
+          Bilder, Video, Formular, Animationen und Mobile-Layout.
+        </p>
+
+        <ul class="pill-list" aria-label="Highlights">
+          <li class="pill">CSS Grid</li>
+          <li class="pill">Flexbox</li>
+          <li class="pill">Sticky Menü</li>
+          <li class="pill">Media Queries</li>
+          <li class="pill">Pseudoselektoren</li>
+        </ul>
+
+        <div class="hero__actions">
+          <a class="btn" href="services.html">Zu den Leistungen</a>
+          <a class="btn btn--ghost" href="kontakt.html">Kontakt aufnehmen</a>
+        </div>
+      </div>
+
+      <figure class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
+          alt="Team arbeitet gemeinsam am Laptop"
+          loading="lazy"
+        />
+        <figcaption>Bild: remote verlinkt (Unsplash)</figcaption>
+      </figure>
+    </section>
+
+    <aside class="sidebar card" aria-label="Sidebar">
+      <h2>Quick Info</h2>
+      <p class="muted">
+        In Mobile wird diese Sidebar unter den Artikeln platziert (Grid Umschaltung).
+      </p>
+
+      <h3>Checkliste</h3>
+      <ol class="list">
+        <li>Struktur: Header, Main, Footer</li>
+        <li>Grid Desktop / 1-Spalte Mobile</li>
+        <li>Flex für Cards & Menü</li>
+        <li>Formular gestaltet</li>
+      </ol>
+
+      <div class="notice">
+        <strong>Tipp:</strong> Erkläre bei der Präsentation die Breakpoints und die Selektoren.
+      </div>
+    </aside>
+
+    <section class="content">
+      <article class="card article">
+        <header class="article__head">
+          <h2>Artikel 1: Layout-Prinzip</h2>
+          <p class="meta">Stand: <time datetime="2026-01-15">15.01.2026</time></p>
+        </header>
+        <p>
+          Am Desktop nutzt diese Seite <strong>CSS Grid</strong> für ein zweispaltiges Layout
+          (Content + Sidebar). Innerhalb von Sektionen werden Elemente mit <strong>Flexbox</strong>
+          ausgerichtet (Buttons, Cards, Menü).
+        </p>
+
+        <h3>Aufzählung (ul)</h3>
+        <ul class="list">
+          <li>Grid für die Seitenaufteilung</li>
+          <li>Flexbox für horizontale Reihen</li>
+          <li>Media Queries für Mobile</li>
+        </ul>
+
+        <a class="link" href="#top">Zurück nach oben</a>
+      </article>
+
+      <article class="card article">
+        <header class="article__head">
+          <h2>Artikel 2: Tabelle</h2>
+          <p class="meta">Beispiel: Projektplan / Features</p>
+        </header>
+
+        <div class="table-wrap" role="region" aria-label="Tabelle – Features" tabindex="0">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Bereich</th>
+                <th scope="col">Technik</th>
+                <th scope="col">Umgesetzt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Navigation</td>
+                <td>Sticky + Burger (CSS)</td>
+                <td><span class="badge badge--ok">Ja</span></td>
+              </tr>
+              <tr>
+                <td>Layout</td>
+                <td>Grid + Flex</td>
+                <td><span class="badge badge--ok">Ja</span></td>
+              </tr>
+              <tr>
+                <td>Formular</td>
+                <td>Inputs + Validierung (HTML)</td>
+                <td><span class="badge badge--ok">Ja</span></td>
+              </tr>
+              <tr>
+                <td>Effekte</td>
+                <td>Hover, Focus, Animation</td>
+                <td><span class="badge badge--ok">Ja</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted">
+          Hinweis: Wrapper sorgt für horizontales Scrollen am Handy (Responsive Tabelle).
+        </p>
+      </article>
+
+      <article id="video" class="card article">
+        <header class="article__head">
+          <h2>Artikel 3: Video-Einbindung</h2>
+          <p class="meta">YouTube-Embed</p>
+        </header>
+
+        <div class="video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+            title="Eingebettetes Video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="muted">
+          Das ist ein Embed (remote).
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 NovaWerk • <a class="link" href="kontakt.html">Kontakt</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaWerk – Leistungen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Menü umschalten">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Zur Startseite">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__text">NovaWerk</span>
+    </a>
+
+    <label class="burger" for="nav-toggle" aria-label="Menü öffnen/schließen">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Hauptmenü">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link is-active" href="services.html">Leistungen</a>
+      <a class="nav__link" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page__head card">
+      <h1>Leistungen</h1>
+      <p class="muted">
+        Beispielseite mit mehreren Artikeln, Karten-Layout und Hover-Effekten.
+      </p>
+    </header>
+
+    <section class="grid-cards" aria-label="Leistungen Übersicht">
+      <article class="card service">
+        <h2>Webdesign</h2>
+        <p>Strukturierte Seiten, klare Typografie, responsive Layouts.</p>
+        <ul class="list">
+          <li>Grid / Flex</li>
+          <li>Navigation</li>
+          <li>Semantisches HTML</li>
+        </ul>
+        <a class="btn btn--small" href="kontakt.html">Anfragen</a>
+      </article>
+
+      <article class="card service">
+        <h2>UI-Komponenten</h2>
+        <p>Buttons, Cards, Tabellen, Formulare – konsistent gestylt.</p>
+        <ul class="list">
+          <li>Hover/Focus States</li>
+          <li>Pseudoselektoren</li>
+          <li>Barrierearm</li>
+        </ul>
+        <a class="btn btn--small" href="kontakt.html">Kontakt</a>
+      </article>
+
+      <article class="card service">
+        <h2>Performance</h2>
+        <p>Remote Medien, Lazy-Loading, saubere CSS-Struktur.</p>
+        <ul class="list">
+          <li>Keine großen Dateien</li>
+          <li>Optimierte Bilder</li>
+          <li>Einfach wartbar</li>
+        </ul>
+        <a class="btn btn--small" href="index.html#video">Video ansehen</a>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Bild-Galerie</h2>
+      <div class="gallery" aria-label="Galerie">
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=70"
+          alt="Meeting am Tisch"
+          loading="lazy"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=70"
+          alt="Notizen und Laptop"
+          loading="lazy"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=70"
+          alt="Teamarbeit"
+          loading="lazy"
+        />
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 NovaWerk • <a class="link" href="index.html">Home</a></p>
+  </footer>
+</body>
+</html>
