@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personentabelle</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- type="module" ermöglicht den JSON-Import in script.js -->
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <table>
+        <caption>Personen</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <!-- Klick auf diesen Header sortiert die Tabelle nach Größe -->
+                <th id="height" title="Klicken zum Sortieren">Größe (cm)</th>
+                <th>Geburtsdatum</th>
+                <th>Herkunft</th>
+                <th>Gewicht (kg)</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- Wird dynamisch durch script.js befüllt -->
+        </tbody>
+    </table>
+</body>
+
+</html>
